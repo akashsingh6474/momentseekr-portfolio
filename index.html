@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MomentSeekr – Street & Travel Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Montserrat', sans-serif; }
+    body { background:#fff; color:#333; line-height:1.6; }
+    a { text-decoration:none; color:inherit; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; position:fixed; width:100%; top:0; background:rgba(255,255,255,0.95); z-index:1000; box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+    header h1 { font-weight:700; font-size:24px; }
+    nav a { margin-left:30px; font-weight:500; transition:0.3s; }
+    nav a:hover { color:#e63946; }
+
+    /* Hero */
+    #hero { height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:url('images/hero1.jpg') center/cover no-repeat; color:#fff; text-align:center; }
+    #hero h2 { font-size:3rem; margin-bottom:20px; text-shadow:2px 2px 8px rgba(0,0,0,0.7); }
+    .cta-button { padding:15px 30px; background:#e63946; color:#fff; font-weight:700; border:none; border-radius:5px; cursor:pointer; transition:0.3s; }
+    .cta-button:hover { background:#d62828; }
+
+    /* Sections */
+    section { padding:80px 50px; max-width:1200px; margin:0 auto; }
+    section h2 { font-size:2rem; margin-bottom:30px; text-align:center; color:#1d3557; }
+
+    /* Gallery */
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .gallery img { width:100%; height:auto; border-radius:5px; transition:0.3s; cursor:pointer; }
+    .gallery img:hover { transform: scale(1.05); }
+
+    /* About */
+    #about p { max-width:800px; margin:0 auto; font-size:1.1rem; text-align:center; }
+
+    /* Contact */
+    form { max-width:600px; margin:0 auto; display:flex; flex-direction:column; }
+    form input, form textarea { padding:15px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px; font-size:1rem; }
+    form button { padding:15px; background:#e63946; color:#fff; border:none; font-weight:700; cursor:pointer; border-radius:5px; transition:0.3s; }
+    form button:hover { background:#d62828; }
+
+    /* Footer */
+    footer { text-align:center; padding:30px 20px; background:#1d3557; color:#fff; margin-top:50px; }
+    footer a { color:#f1faee; margin:0 10px; }
+
+    /* Smooth Scroll */
+    html { scroll-behavior:smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>MomentSeekr</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Chasing Stories. Capturing Souls.</h2>
+    <a href="#portfolio" class="cta-button">Explore My Work</a>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <!-- Street Life Gallery -->
+    <h3>Street Life</h3>
+    <div class="gallery">
+      <img src="images/street1.jpg" alt="Street in India">
+      <img src="images/street2.jpg" alt="Market Life">
+      <img src="images/street3.jpg" alt="Candid Moments">
+    </div>
+
+    <!-- Cultural Chronicles -->
+    <h3>Cultural Chronicles</h3>
+    <div class="gallery">
+      <img src="images/festival1.jpg" alt="Festival Colors">
+      <img src="images/festival2.jpg" alt="Ritual Ceremony">
+      <img src="images/festival3.jpg" alt="Traditional India">
+    </div>
+
+    <!-- Faces of India -->
+    <h3>Faces of India</h3>
+    <div class="gallery">
+      <img src="images/face1.jpg" alt="Portrait Emotions">
+      <img src="images/face2.jpg" alt="Expressive Faces">
+      <img src="images/face3.jpg" alt="Stories in Eyes">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Akash Singh, a street and travel photographer capturing the unseen stories of India. Through MomentSeekr, I aim to freeze fleeting emotions, cultural rituals, and everyday life in frames that speak. My work tells stories beyond the lens, giving you a glimpse into the heart of India.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center; margin-top:20px;">
+      Email: <a href="mailto:akashsingh6474@gmail.com">akashsingh6474@gmail.com</a> <br>
+      Phone: +91-7412946190 <br>
+      Instagram: 
+      <a href="https://www.instagram.com/momentseekr" target="_blank">@momentseekr</a> | 
+      <a href="https://www.instagram.com/its_ankush_photography" target="_blank">@its_ankush_photography</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MomentSeekr. Capturing India, one moment at a time.</p>
+  </footer>
+
+</body>
+</html>
